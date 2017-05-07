@@ -1,0 +1,123 @@
+/*/////////////////////////////////////////////// GENERAL STYLES /////////////////////////////////////////////*/
+*{
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  color: turquoise;
+  font-weight: bold;
+}
+
+p, a {
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  padding: 5%;
+  min-height: 70vh;
+}
+
+page {
+  min-height: 70vh;
+}
+
+footer {
+  padding: 10%;
+  min-height: 10vh;
+}
+
+}
+section {
+  padding: 2% 7%;
+}
+
+/*/////////////////////////////////////////////// HEADER STYLES ////////////////////////////////////////////*/
+header {
+  background-image: url('https://media.giphy.com/media/IpCLwFwKU8hUI/giphy.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+header nav a{
+  text-align:right;
+  text-decoration: none;
+  font-size: 20px;
+  color: turquoise;
+}
+
+.logo {
+  text-align: left;
+}
+
+.page {
+  padding: 20%, auto;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.sub-head {
+  color: blue;
+  font-size: 40px;
+  line-height: 1.5
+}
+
+.byline {
+  text-align: center;
+  font-size: 20px;
+  color: turquoise;
+}
+
+.top {
+  text-align: right;
+  padding: 2%;
+}
+/*/////////////////////////////////////////////// ABOUT SECTION/////////////////////////////////////////////*/
+h2 {
+  color: turquoise;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*/////////////////////////////////////////////// PORTFOLIO SECTION /////////////////////////////////////////////*/
+#portfolio {
+  text-align: center;
+}
+
+div i {
+  color: orange;
+}
+/*/////////////////////////////////////////////// MAP SECTION /////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////// BLOG SECTION /////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////// FOOTER STYLES/////////////////////////////////////////////*/
+footer i{
+  color: orange;
+}
+
+
+
+/*
+Things to style
+CSS reset
+
+Add padding and margin to each section
+
+STYLE icons
+
+Background colours and images
+
+
+*/

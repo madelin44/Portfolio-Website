@@ -1,0 +1,86 @@
+---
+layout: default
+title: Madelins Site
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.05066111736!2d150.65108598099138!3d-33.84797147129247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW!5e0!3m2!1sen!2sau!4v1493948580937" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+portfolio:
+  - name: Hotels
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: star
+  - name: Resorts
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: circle
+  - name: Holiday Homes
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: square
+  - name: Hotels
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: triangle
+  - name: Resorts
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: star
+  - name: Holiday Homes
+    description: Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.
+    icon: star
+experiences:
+  - company: McDonald's
+    position: General Manager
+    description: Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: square
+  - company: McDonald's
+    position: General Manager
+    description: Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: square
+  - company: McDonald's
+    position: General Manager
+    description: Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: square
+  - company: McDonald's
+    position: General Manager
+    description: Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: square
+---
+  <!--Header Section-->
+  <!-- End Of Header Section-->
+  <!--About Section-->
+  <section id="about">
+    <div>
+      <h2>About</h2>
+      <p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.</p>
+    </div>
+  </section>
+  <!--End of About Section-->
+  <!--Portfolio Section-->
+  <section id="portfolio" class="portfolio-section">
+    <div class="grid">
+      <h2 class="col-12">Portfolio</h2>
+
+      {% for portfolio in page.portfolio %}
+      <div class="col-4">
+        <i class="fa fa-{{ portfolio.icon }}"></i>
+        <h3>{{ portfolio.name }}</h3>
+        <p>{{ portfolio.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Second Row -->
+<section class="grid">
+    <h2 class="col-12">My Experience</h2>
+    {% for experience in page.experiences %}
+    <div class="col-1">
+      <i class="fa fa-{{ experience.icon }}"></i></div>
+    <div class="col-2">
+      <h3>{{ experience.company }} </h3>
+      <h4>{{ experience.position }} </h4>
+    </div>
+    <div class="col-9">
+        <p> {{ experience.description}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+    <!--End of blog section-->
+    <!--FOOTER-->
+    <!--END OF FOOTER-->
+  </body> <!--CLOSING BODY TAG-->
+  </html> <!--END OF HTML DOCUMENT-->
